@@ -1,0 +1,2 @@
+# cat=basic//; type=boolean; label=Debug: Check the box to activate debugging output to the DevLog (requires an extension like devlog)
+debug = 0

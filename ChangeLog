@@ -1,0 +1,9 @@
+08-07-20 Francois Suter <typo3@cobweb.ch>
+
+	* Added base HELO service for testing
+	* Added example HTML form for calling the remote server
+	* Added manual
+
+08-04-29 Francois Suter <typo3@cobweb.ch>
+
+	* Initial release
