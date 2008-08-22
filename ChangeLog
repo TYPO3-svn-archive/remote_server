@@ -1,3 +1,7 @@
+08-08-22 Francois Suter <typo3@cobweb.ch>
+
+	* Corrected bug in tx_remoteserver_response::renderAsXML() method
+
 08-07-20 Francois Suter <typo3@cobweb.ch>
 
 	* Added base HELO service for testing

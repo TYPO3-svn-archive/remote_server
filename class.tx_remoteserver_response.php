@@ -227,7 +227,16 @@ class tx_remoteserver_response {
 	function renderAsXML() {
 		header('Content-type: text/xml; charset='.$this->charset);
 		header('X-JSON: true');
-		echo implode('', $this->content);
+		$xmlString = implode('', $this->content);
+			// Use SimpleXML (if available) utility to check XML validity
+		if (function_exists('simplexml_load_string') && @simplexml_load_string($xmlString)) {
+				// String is valid XML, return it as is
+			echo $xmlString;
+		}
+		else {
+				// String is not XML (or could not be verified), use array2xml to convert content
+			echo t3lib_div::array2xml($this->content);
+		}
 	}
 
 
