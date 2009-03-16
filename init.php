@@ -336,6 +336,9 @@ if (TYPO3_extTableDef_script)	{
 }
 
 
+// Read remote server's configuration
+$configuration = unserialize($TYPO3_CONF_VARS['EXT']['extConf']['remote_server']);
+
 
 // *******************************
 // BackEnd User authentication
@@ -351,6 +354,7 @@ $BE_USER->warningEmail = $TYPO3_CONF_VARS['BE']['warning_email_addr'];
 $BE_USER->lockIP = $TYPO3_CONF_VARS['BE']['lockIP'];
 $BE_USER->auth_timeout_field = intval($TYPO3_CONF_VARS['BE']['sessionTimeout']);
 $BE_USER->OS = TYPO3_OS;
+$BE_USER->getMethodEnabled = (empty($configuration['allowGET']) ? false : true);
 $BE_USER->start();			// Object is initialized
 //$BE_USER->checkCLIuser();
 //t3lib_div::debug($BE_USER->user);

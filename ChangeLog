@@ -1,3 +1,10 @@
+09-03-16 Francois Suter <typo3@cobweb.ch>
+
+	* Added configuration switch to allow GET requests
+	* Replaced call to deprecated method t3lib_div::array2xml()
+	* Updated the manual
+	* Released to TER as version 0.2.0
+
 08-08-22 Francois Suter <typo3@cobweb.ch>
 
 	* Corrected bug in tx_remoteserver_response::renderAsXML() method

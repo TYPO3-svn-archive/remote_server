@@ -235,7 +235,7 @@ class tx_remoteserver_response {
 		}
 		else {
 				// String is not XML (or could not be verified), use array2xml to convert content
-			echo t3lib_div::array2xml($this->content);
+			echo t3lib_div::array2xml_cs($this->content);
 		}
 	}
 

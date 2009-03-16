@@ -1,2 +1,5 @@
 # cat=basic//; type=boolean; label=Debug: Check the box to activate debugging output to the DevLog (requires an extension like devlog)
 debug = 0
+
+# cat=basic/enable/; type=boolean; label=Allow GET: Allow the request to be submitted via GET instead of just POST
+allowGET = 0

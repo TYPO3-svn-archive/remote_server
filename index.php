@@ -38,9 +38,6 @@ require_once('conf.php');
 
 require_once('init.php');
 
-// Read configuration
-$configuration = unserialize($TYPO3_CONF_VARS['EXT']['extConf']['remote_server']);
-
 // Get the service ID requested and the corresponding script
 $serviceID = (string)t3lib_div::_GP('serviceID');
 $script = $TYPO3_CONF_VARS['EXTCONF']['remoteserver']['services'][$serviceID];
