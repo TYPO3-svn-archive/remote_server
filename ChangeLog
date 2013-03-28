@@ -1,20 +1,24 @@
-09-03-16 Francois Suter <typo3@cobweb.ch>
+2013-03-28 Francois Suter <typo3@cobweb.ch>
+
+	* Last release, with obsolete status
+
+2009-03-16 Francois Suter <typo3@cobweb.ch>
 
 	* Added configuration switch to allow GET requests
 	* Replaced call to deprecated method t3lib_div::array2xml()
 	* Updated the manual
 	* Released to TER as version 0.2.0
 
-08-08-22 Francois Suter <typo3@cobweb.ch>
+2008-08-22 Francois Suter <typo3@cobweb.ch>
 
 	* Corrected bug in tx_remoteserver_response::renderAsXML() method
 
-08-07-20 Francois Suter <typo3@cobweb.ch>
+2008-07-20 Francois Suter <typo3@cobweb.ch>
 
 	* Added base HELO service for testing
 	* Added example HTML form for calling the remote server
 	* Added manual
 
-08-04-29 Francois Suter <typo3@cobweb.ch>
+2008-04-29 Francois Suter <typo3@cobweb.ch>
 
 	* Initial release
